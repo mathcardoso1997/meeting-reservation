@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /meeting-room
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: postgres://<URL>
+    username: <USERNAME>
+    password: <PASSWORD>
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+
+application:
+  description: Meeting Room Reservation
+
